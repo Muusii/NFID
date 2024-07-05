@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "NFID_new_backend": {
+      "candid": "src/NFID_new_backend/NFID_new_backend.did",
+      "package": "NFID_new_backend",
+      "type": "rust"
+    },
+    "NFID_new_frontend": {
+      "dependencies": [
+        "NFID_new_backend"
+      ],
+      "source": [
+        "src/NFID_new_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "NFID_new_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
